@@ -1,0 +1,13 @@
+{
+  "name": "@phosop/cli",
+  "version": "0.2.0",
+  "license": "Apache-2.0",
+  "bin": { "phosop": "dist/index.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "test": "echo \"no cli tests\" && exit 0"
+  },
+  "dependencies": { "@phosop/node": "workspace:*" },
+  "devDependencies": { "tsx": "^4.7.0", "typescript": "^5.5.0", "@types/node": "^20.12.0" }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "phosop",
+  "version": "0.2.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "Phosop — open-source, Stripe-compatible gasless USDC payouts on Solana (devnet + mainnet).",
+  "packageManager": "pnpm@11.7.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev:api": "pnpm --filter @phosop/api dev",
+    "dev:web": "pnpm --filter @phosop/web dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint"
+  },
+  "engines": { "node": ">=22" },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0"
+  }
+}

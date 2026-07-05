@@ -1,0 +1,27 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+allowBuilds:
+  '@nestjs/core': true
+  bigint-buffer: true
+  bufferutil: true
+  esbuild: true
+  utf-8-validate: true
+
+auditConfig:
+  # GHSA requests bigint-buffer >=1.1.6, but npm latest is 1.1.5.
+  # Keep this pinned as an explicit exception until the Solana stack removes it
+  # or the patched bigint-buffer version is published.
+  ignoreGhsas:
+    - GHSA-3gc7-fjrx-p6mg
+
+overrides:
+  elliptic: ^6.6.1
+  file-type: ^21.3.2
+  lodash: ^4.17.21
+  multer: ^2.1.0
+  protobufjs: ^7.4.0
+  qs: ^6.13.1
+  uuid: ^11.1.1
+  ws: ^8.18.0
