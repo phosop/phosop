@@ -6,6 +6,7 @@
 
 The open-source payout engine for USDC on Solana.
 Pay sellers in USDC without asking them to manage SOL. Gasless for sellers. Self-hosted. Operator-controlled.
+Website: https://phosop.fun
 
 [GitHub](https://github.com/phosop/phosop) | [X / Twitter](https://x.com/yumans21) | [Quickstart](./docs/quickstart.md) | [API Reference](./docs/api-parameters.md) | [Networks](./docs/networks.md) | [Security](./docs/security.md)
 
